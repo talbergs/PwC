@@ -34,14 +34,14 @@ docker run --name tests --rm -v $PWD:/app php /app/vendor/bin/phpunit -- /app/te
 # ADR
 - Emphasis is put on the architectural structure of the system, not on the effectiveness of algorithm just yet. Most important investment at this stage is clearly designed system that fulfils the base requirement.
 - Frameworkless, only packages are picked to reduce extra work.
-- Each component is autonomous, all in addition to components primary task (3rd party request, the path finder, the graph structure) in addition expose a platform for logging (transparency) and caching (memoization) for application to easily instrument against.
+- Each component is autonomous; in addition to components primary task (3rd party request, the path finder, the graph structure) they all expose platforms for logging (transparency) and caching (memoization) for consumer application to easily instrument against.
 - Logging is already instrumented.
 - Caching is instrumented since countries do not change bordering countries too often.
 - Graceful validation and other lesser priority bells and whistles are omitted for MVP.
 
 # Logged hours:
 
-> I kept logging hours with the associated focus, both - for our curiosity on this matter in comparison with the delivered result.
+> I kept logging hours with the associated focus for both of our curiosity on this matter and how the price compares with result.
 
 ### (DAY1)
 - (14 min) system's outline and core ideas on paper
