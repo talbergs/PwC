@@ -1,0 +1,25 @@
+{
+    "name": "mt/bigmoney",
+    "autoload": {
+        "psr-4": {
+            "PwC\\RouteFinder\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Martins Talbergs",
+            "email": "martins.talbergs@reppublika.com"
+        }
+    ],
+    "require": {
+        "symfony/routing": "^6.3",
+        "psr/log": "^3.0",
+        "psr/simple-cache": "^3.0",
+        "symfony/cache": "^6.3",
+        "symfony/monolog-bundle": "^3.8",
+        "symfony/http-foundation": "^6.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.3"
+    }
+}
